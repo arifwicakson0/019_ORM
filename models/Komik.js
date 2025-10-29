@@ -9,10 +9,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
         },
         author: {
             type: DataTypes.STRING,
         }
-    })
+    });
+
+    return Komik;
 }
